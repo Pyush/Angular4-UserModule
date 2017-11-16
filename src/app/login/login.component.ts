@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {COMMON_NAMES} from "../common";
+import {SafeHtmlPipePipe} from "../safe-html-pipe.pipe";
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  items: string[] = COMMON_NAMES;
+  inputText = '';
   constructor() { }
 
   ngOnInit() {
   }
+
+
 
 }

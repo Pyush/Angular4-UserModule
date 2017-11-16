@@ -9,11 +9,10 @@ export class AuthGuard implements CanActivate {
 
   }
 
-  canActivate(
-    next: ActivatedRouteSnapshot,
+  canActivate(next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
 
-    this.router.navigate(['/login'], {queryParams: {returnUrl: state.url}});
-    return false;
+   // this.router.navigate(['/home'], {queryParams: {returnUrl: state.url}});
+    return true;
   }
 }

@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import {AuthGuard} from "./auth-guard.guard";
 import {LoginComponent} from "./login/login.component";
@@ -10,6 +9,8 @@ import {routing} from "./routes";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {NavigationbarComponent} from "./navigationbar/navigationbar.component";
+import { SafeHtmlPipePipe } from './safe-html-pipe.pipe';
+import {ContenteditableModel} from "./contenteditable-model.directive";
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import {NavigationbarComponent} from "./navigationbar/navigationbar.component";
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    NavigationbarComponent
+    NavigationbarComponent,
+    ContenteditableModel,
+    SafeHtmlPipePipe,
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,6 @@ export const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {
     path: 'home', component: HomeComponent, canActivate: [AuthGuard],
-    children: []
   },
   // otherwise redirect to home
   {path: '**', redirectTo: ''}

@@ -1,4 +1,8 @@
-<app-navigationbar></app-navigationbar>
+<!--<app-navigationbar></app-navigationbar>-->
 <div class="col-sm-12 col-md-10 col-md-offset-1">
+  <div class="form-control" contenteditable="true"
+       style="border:1px lightgrey solid;min-height:88px"
+       [(contenteditableModel)]="inputText"></div>
 
+  <div [innerHtml]="inputText"></div>
 </div>
